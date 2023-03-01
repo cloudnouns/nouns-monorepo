@@ -1,0 +1,132 @@
+.mobileWrapper {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.mobileHeader {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 0%;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #8c8d92;
+}
+
+.mobileMeta {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 0%;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.mobileMeta span:first-child {
+  margin-right: 16px;
+}
+
+.mobileMeta span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mobileTitle {
+  padding: 16px 0px;
+  color: #212529;
+}
+
+.desktopWrapper {
+  display: none;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.desktopHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.desktopMeta {
+  overflow: hidden;
+}
+
+.desktopMeta span:first-child {
+  color: #8c8d92;
+  width: 48px;
+  margin-right: 8px;
+}
+
+.desktopMeta span:last-child {
+  color: #212529;
+}
+
+.desktopMidRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.midRow1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+/* .desktopMeta2 div span:first-child {
+  color: #8c8d92;
+  font-weight: 700;
+  font-size: 14px;
+  margin-right: 8px;
+} */
+
+.tagWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.tag {
+  color: #2b83f6;
+  background-color: rgba(43, 131, 246, 0.1);
+  font-size: 12px;
+  line-height: 16px;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.comment {
+  color: #8c8d92;
+  font-weight: 600;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (min-width: 640px) {
+  .mobileWrapper {
+    display: none;
+  }
+
+  .desktopWrapper {
+    display: flex;
+  }
+
+  .comment {
+    color: #8c8d92;
+    font-weight: 600;
+    font-size: 16px;
+    padding-top: 4px;
+  }
+}

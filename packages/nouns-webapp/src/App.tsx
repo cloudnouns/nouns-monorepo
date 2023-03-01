@@ -24,6 +24,7 @@ import relativeTime from 'dayjs/plugin/relativeTime';
 import { AvatarProvider } from '@davatar/react';
 import dayjs from 'dayjs';
 import DelegatePage from './pages/DelegatePage';
+import PropLotPage from './pages/PropLotPage';
 
 function App() {
   const { account, chainId, library } = useEthers();
@@ -68,6 +69,9 @@ function App() {
             <Route exact path="/playground" component={Playground} />
             <Route exact path="/delegate" component={DelegatePage} />
             <Route exact path="/explore" component={ExplorePage} />
+            <Route exact path="/proplot" component={PropLotPage} />
+            <Route exact path="/proplot/create" component={PropLotPage} />
+            <Route exact path="/proplot/:id" component={PropLotPage} />
             <Route component={NotFoundPage} />
           </Switch>
           <Footer />

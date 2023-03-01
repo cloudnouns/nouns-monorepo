@@ -1,0 +1,133 @@
+.cardWrapper {
+  margin-bottom: 16px;
+  cursor: pointer;
+  border: 1px solid #e2e3e8;
+  border-radius: 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.notFound {
+  background-color: rgb(243 244 246);
+  cursor: auto;
+}
+
+.summary {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 0%;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 24px;
+}
+
+.summaryContent {
+  flex: 1 1 0%;
+  font-size: 16px;
+  color: #212529;
+  padding: 16px;
+  border: 1px solid #e2e3e8;
+  border-radius: 8px;
+  background-color: #f4f4f8;
+}
+
+.footer {
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footerTextWrapper {
+  display: flex;
+  flex: 1 1 0%;
+  color: #8c8d92;
+  white-space: pre;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0px 4px;
+}
+
+.detailsBtn {
+  font-weight: 600;
+  font-size: 16px;
+  color: #2b83f6 !important;
+  display: flex;
+  flex: 1 1 0%;
+  background-color: white;
+  border: 1px solid #e2e3e8 !important;
+  border-radius: 10px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.detailsBtn:hover {
+  background-color: #f4f4f8;
+}
+
+.detailsBtn:focus {
+  background-color: #e2e3e8;
+}
+
+.footerBtnWrapper {
+  margin-top: 8px;
+  width: 100%;
+  display: flex;
+}
+
+@media (min-width: 640px) {
+  .summary {
+    padding-top: 16px;
+  }
+
+  .summaryContent {
+    margin: 0px -2px;
+  }
+
+  .footer {
+    flex-direction: row;
+    padding-top: 16px;
+    font-size: 15px;
+  }
+
+  .footerTextWrapper {
+    align-self: flex-end;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: auto;
+    padding: 0px;
+  }
+
+  .footerBtnWrapper {
+    margin-top: 0px;
+    width: auto;
+  }
+
+  .detailsBtn {
+    font-weight: 700;
+    font-size: 15px;
+    color: #2b83f6 !important;
+    display: flex;
+    flex: 1 1 0%;
+    background-color: white;
+    border: 0px solid #e2e3e8 !important;
+    border-radius: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .detailsBtn::after {
+    padding-left: 4px;
+    content: '→';
+  }
+}

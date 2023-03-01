@@ -1,0 +1,115 @@
+.dropdownWrapper {
+  display: flex;
+  flex: 1 1 0%;
+  margin-right: 8px;
+}
+
+.dropdownWrapper:last-child {
+  margin-right: 0px;
+}
+
+.label {
+  padding-right: 8px;
+}
+
+.toggle {
+  font-weight: 600;
+  display: flex;
+  flex: 1 1 0%;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid #e2e3e8;
+  border-radius: 10px !important;
+  padding: 0px;
+  color: #2b83f6 !important;
+}
+
+.toggle:hover {
+  background-color: #f4f4f8 !important;
+}
+
+.toggle:focus {
+  background-color: #e2e3e8 !important;
+}
+
+.toggleItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600px;
+  font-size: 16px;
+  text-transform: none;
+  padding: 8px 16px;
+}
+
+.menu {
+  min-width: 220px !important;
+  padding: 8px !important;
+  margin-top: 8px !important;
+  border: 1px solid #e2e3e8 !important;
+  border-radius: 10px !important;
+  background-color: #f4f4f8 !important;
+}
+
+.menuItem {
+  min-width: 250px;
+  cursor: pointer;
+  justify-content: start;
+  border-radius: 6px;
+  margin: 2px 0px;
+  padding: 8px 16px !important;
+}
+
+.menuItem:hover {
+  background-color: #e2e3e8 !important;
+}
+
+.menuItem:active {
+  background-color: white !important;
+}
+
+.selectedMenuItem {
+  background-color: white;
+  border: 1px solid #e2e3e8;
+}
+
+.menuItemLabelWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.menuRadioBtn {
+  border: 2px solid #8c8d92;
+  margin-right: 8px;
+}
+
+.menuRadioBtnSelected {
+  border-color: #231f20;
+}
+
+.menuRadioBtnSelected:checked {
+  background-color: #231f20 !important;
+  border-color: #e2e3e8 !important;
+}
+
+.menuItemLabel {
+  font-weight: 600;
+  font-size: 14px;
+  color: #8c8d92;
+  display: flex;
+  flex: 1 1 0%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.selectedMenuItemLabel {
+  color: #231f20;
+}
+
+@media (min-width: 640px) {
+  .dropdownWrapper {
+    display: block;
+    flex: none;
+  }
+}

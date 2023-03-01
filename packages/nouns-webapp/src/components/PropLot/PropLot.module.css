@@ -1,0 +1,58 @@
+.copy {
+  margin-top: 16px;
+  color: #8c8d92;
+}
+
+.copy p {
+  padding: 0;
+}
+
+.actionWrapper {
+  margin: 16px 0px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.filterWrapper {
+  display: flex;
+  flex: 1 1 0%;
+}
+
+.btnWrapper {
+  display: flex;
+  margin-bottom: 16px;
+  justify-content: flex-end;
+}
+
+.createBtn {
+  flex: 1 1 0%;
+  border-radius: 10px !important;
+  font-weight: 700 !important;
+  padding: 8px 16px !important;
+}
+
+.btnIsOwner {
+  color: white !important;
+  font-size: 16px !important;
+  background-color: #2b83f6 !important;
+}
+
+.btnNotOwner {
+  color: #8c8d92 !important;
+  background-color: #f4f4f8 !important;
+  border-color: #e2e3e8 !important;
+}
+
+@media (min-width: 640px) {
+  .actionWrapper {
+    flex-direction: row;
+  }
+
+  .btnWrapper {
+    margin-bottom: 0px;
+  }
+
+  .createBtn {
+    flex: none;
+  }
+}
