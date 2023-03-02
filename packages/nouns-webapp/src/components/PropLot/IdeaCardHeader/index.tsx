@@ -1,9 +1,10 @@
 import clsx from 'clsx';
 import classes from './IdeaCardHeader.module.css';
+import VoteControls from '../VoteControls';
 
 const IdeaCardHeader = () => {
   const tags = ['Request', 'Community', 'Governance'];
-  const comments = 3;
+  const comments = [1, 1, 1];
 
   return (
     <>
@@ -15,7 +16,7 @@ const IdeaCardHeader = () => {
             <span>badublanc.eth</span>
           </span>
 
-          {/* <VoteControls /> */}
+          <VoteControls />
         </div>
 
         <span className={classes.mobileTitle}>PPP (Perpertual POAP Program Continuation)</span>
@@ -30,7 +31,7 @@ const IdeaCardHeader = () => {
               );
             })}
             <span className={classes.comment}>
-              {comments} {comments === 1 ? 'comment' : 'comments'}
+              {comments.length} {comments.length === 1 ? 'comment' : 'comments'}
             </span>
           </div>
         )}
@@ -44,7 +45,7 @@ const IdeaCardHeader = () => {
             <span>PPP (Perpetual POAP Program Continuation)</span>
           </div>
 
-          {/* <VoteControls /> */}
+          <VoteControls />
         </div>
 
         <div className={classes.desktopMidRow}>
@@ -64,7 +65,7 @@ const IdeaCardHeader = () => {
           </div>
 
           <span className={classes.comment}>
-            {comments} {comments === 1 ? 'comment' : 'comments'}
+            {comments.length} {comments.length === 1 ? 'comment' : 'comments'}
           </span>
         </div>
       </div>

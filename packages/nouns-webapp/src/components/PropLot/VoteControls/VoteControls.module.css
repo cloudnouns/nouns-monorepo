@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.avatars {
+  display: none;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+
+.arrowUp {
+  height: 12px;
+  margin-top: 4px;
+}
+
+.arrowDown {
+  height: 12px;
+  margin-top: 1px;
+}
+
+@media (min-width: 640px) {
+  .avatars {
+    display: flex;
+  }
+}
